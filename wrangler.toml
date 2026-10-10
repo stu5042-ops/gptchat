@@ -9,7 +9,7 @@ compatibility_date = "2026-10-10"
 [[d1_databases]]
 binding = "DB"
 database_name = "friend-chat-db"
-database_id = "PASTE_YOUR_D1_DATABASE_ID_HERE"
+database_id = "a6e540e7-8556-4dcf-a642-c0a04db18902"
 
 [assets]
 directory = "./public"
