@@ -1,0 +1,17 @@
+# 새 Cloudflare Worker 프로젝트 설정
+# Worker 이름은 Cloudflare 대시보드의 이름과 같아야 합니다.
+name = "friend-chat-app"
+main = "src/index.js"
+compatibility_date = "2026-10-10"
+
+# 중요: 실제 D1 데이터베이스를 만든 뒤 아래 ID를 그 데이터베이스 ID로 바꾸세요.
+# 데이터베이스 이름은 Cloudflare에서 friend-chat-db로 만들면 됩니다.
+[[d1_databases]]
+binding = "DB"
+database_name = "friend-chat-db"
+database_id = "PASTE_YOUR_D1_DATABASE_ID_HERE"
+
+[assets]
+directory = "./public"
+binding = "ASSETS"
+run_worker_first = ["/api/*"]
