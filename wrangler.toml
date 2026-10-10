@@ -8,7 +8,7 @@ compatibility_date = "2026-10-10"
 # 데이터베이스 이름은 Cloudflare에서 friend-chat-db로 만들면 됩니다.
 [[d1_databases]]
 binding = "DB"
-database_name = "friend-chat-db"
+database_name = "gptchat"
 database_id = "a6e540e7-8556-4dcf-a642-c0a04db18902"
 
 [assets]
